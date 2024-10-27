@@ -1,0 +1,118 @@
+ {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+ html {
+   font-size: 20px;
+ }
+ body {
+   font-family: Arial, Helvetica, sans-serif;
+   color: #131311;
+   background-color: #10104a;
+   font-size: 1.25rem;
+   line-height: 1.6;
+ }
+ header {
+   background: rgb(14, 14, 13);
+   color: #ae8514;
+   height: 12vh;
+   line-height: 12vh;
+   text-align: center;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   position: sticky;
+   top: 0;
+   z-index: 1000;
+   
+   border-bottom: 4px solid #ce9d3b;
+ }
+ h1 {
+   font-size: 2.5em;
+   margin: 0;
+ 
+   font-weight: bold;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+ }
+ h2 {
+   font-size: 2em;
+   margin-bottom: 20px;
+   color: #0101a2;
+  
+   border-bottom: 2px solid #ce9d3b;
+   padding-bottom: 0.5em;
+ }
+ #content, section {
+   width: 90%;
+   max-width: 1200px;
+   margin: 20px auto;
+   padding: 1rem;
+   background-color: #dadddd;
+   text-align: center;
+   box-shadow: 0 0 10px rgba(149, 225, 173, 0.1);
+   border-radius: 10px;
+  
+   border-top: 3px solid #ce9d3b;
+ }
+ img {
+   margin: 10px;
+   border-radius: 10px;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+ img:hover {
+   transform: scale(1.05);
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+   filter: brightness(1.2);
+ }
+ footer {
+   background: rgb(23, 23, 24);
+   color: rgb(227, 231, 240);
+   text-align: center;
+   height: 8vh;
+   line-height: 8vh;
+   margin-top: 20px;
+   
+   border-top: 4px solid #ce9d3b;
+   font-style: italic;
+ }
+ @media (min-width: 769px) {
+   #content {
+     width: 80%;
+     margin: 30px auto;
+   }
+   
+   footer {
+     height: 5vh;
+     line-height: 5vh;
+   }
+ }
+ @media (min-width: 481px) and (max-width: 768px) {
+   body {
+     font-size: 1rem;
+   }
+   header {
+     height: 15vh;
+     line-height: 15vh;
+   }
+   footer {
+     height: 7vh;
+     line-height: 7vh;
+   }
+ }
+ @media (max-width: 480px) {
+   body {
+     font-size: 0.875rem;
+   }
+   header {
+     height: 20vh;
+     line-height: 20vh;
+   }
+   #content, section {
+     width: 95%;
+     padding: 0.75rem;
+   }
+   footer {
+     height: 10vh;
+     line-height: 10vh;
+   }
+ 
